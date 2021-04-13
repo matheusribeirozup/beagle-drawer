@@ -8,7 +8,7 @@ import br.com.zup.beagle.android.setup.Environment
 @BeagleComponent
 class DrawerBeagleConfig : BeagleConfig {
     override val baseUrl: String
-        get() = "http://10.0.2.2:8080" //todo check last / in docs
+        get() = "http://10.0.2.2:8080"
     override val cache: Cache
         get() = Cache(enabled = true, maxAge = 500, size = 3)
     override val environment: Environment

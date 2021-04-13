@@ -5,6 +5,7 @@ import br.com.zup.beagle.widget.core.Flex
 import br.com.zup.beagle.widget.core.JustifyContent
 import br.com.zup.beagle.widget.core.TextAlignment
 import br.com.zup.beagle.widget.layout.Container
+import br.com.zup.beagle.widget.ui.Button
 import br.com.zup.beagle.widget.ui.Text
 
 object DrawerBuilder {
@@ -14,12 +15,6 @@ object DrawerBuilder {
         email = "android.studio@android.com",
         destinations = buildDestinations()
     )
-
-    fun buildHome() = buildPage("This is home")
-
-    fun buildGallery() = buildPage("This is gallery")
-
-    fun buildSlideshow() = buildPage("This is slideshow")
 
     private fun buildDestinations() = listOf(
         Destination(
@@ -41,6 +36,12 @@ object DrawerBuilder {
             path = "/slideshow",
         )
     )
+
+    fun buildHome() = buildPage("This is home")
+
+    fun buildGallery() = buildPage("This is gallery")
+
+    fun buildSlideshow() = buildPage("This is slideshow")
 
     private fun buildPage(message: String) =
         Container(

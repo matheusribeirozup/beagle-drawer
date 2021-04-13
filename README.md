@@ -26,4 +26,4 @@ The most commonly applied way to build a drawer with navigation according to the
 Another important detail is that due to the nature of the `DrawerLayout` component with `NavigationView` being strongly linked to an `Activity`, the endpoint `/drawer` that returns only the `DrawerWidget` only makes sense to be called by `DrawerActivity`, which is responsible for doing the routing and negotiations navigation between clicks of destinations.
 
 ### Another note
-As the implementation is found in a local activity called `DrawerActivity`, for a code hosted on the BFF to navigate to it, it is necessary to trigger a custom action. It is present in this project, but it is not used, with the name of `OpenDrawer`.
+As the implementation is found in a local activity called `DrawerActivity`, for a code hosted on the BFF to navigate to it, it is necessary to trigger an `OpenNativeRoute` or a custom action. For that, configure a `DeepLinkHandler` in the project.
